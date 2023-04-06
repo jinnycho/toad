@@ -1,4 +1,14 @@
-build:
-	esbuild $$(find lib -type f) --outdir=build --watch
+tmux:
+	bash .tmux.sh
 
-.PHONY: build
+all:
+	tmux split-pane make build
+	make server
+
+build:
+	esbuild $$(find lib draw -type f) --outdir=build --watch
+
+server:
+	python3 -m http.server 2424
+
+.PHONY: build all server
