@@ -1,4 +1,4 @@
 build:
-	esbuild $$(find src -type f) --outdir=build --watch
+	esbuild $$(find lib -type f) --outdir=build --watch
 
 .PHONY: build
