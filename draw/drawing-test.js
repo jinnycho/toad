@@ -6,7 +6,7 @@ function test() {
     toad.drawLine({ from: { x: 300, y: 100 }, to: { x: 300, y: 300 } })
 
     toad.strokeWidth(40, () => {
-      toad.drawLine({ from: { x: 400, y: 100 }, to: { x: 400, y: 300 } })
+      toad.drawLine({ from: { x: 400, y: 100 }, to: { x: 400, y: 300 } }).scale(0.4).scaleXY({ x: 4, y: 1 }).translate({ x: -300, y: 200 })
     })
 
     toad.group(() => {
