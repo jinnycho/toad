@@ -7,11 +7,30 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => main())
     </script>
+    <style type='text/css'>
+        svg {
+            border: 1px dashed #444;
+        }
+
+        body>* {
+            margin: 20px 0px 0px 20px;
+        }
+
+        body {
+            margin: 40px 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 
 <body>
-    <button onclick='downloadSVG()'>Download</button>
     <main id='drawing'></main>
+    <button onclick='downloadSVG()'>Download SVG</button>
 </body>
 
 </html>
