@@ -6,7 +6,7 @@ all:
 	make server
 
 build:
-	esbuild $$(find lib drawings -type f) --outdir=build --watch
+	esbuild $$(find lib drawings -type f) --bundle --outdir=build --watch
 
 server:
 	python3 -m http.server 2424
