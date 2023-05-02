@@ -3,10 +3,6 @@
 <head>
     <title>Drawing</title>
     <script src='./build/download-svg.js'></script>
-    <script type='module' src='./build/drawings/drawing-02.js'></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => main())
-    </script>
     <style type='text/css'>
         svg {
             border: 1px dashed #444;
@@ -25,6 +21,17 @@
             cursor: pointer;
         }
 
+        svg * {
+            /* fill: transparent; */
+            stroke: #000;
+            stroke-width: 1px;
+        }
+
+        .leva__root>* {
+            top: 0px !important;
+            left: 0px !important;
+        }
+
     </style>
 </head>
 
@@ -32,5 +39,6 @@
     <main id='drawing'></main>
     <button onclick='downloadSVG()'>Download SVG</button>
 </body>
+<script src='./build/drawings/drawing-02.js'></script>
 
 </html>
