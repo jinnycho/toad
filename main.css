@@ -38,6 +38,7 @@ svg * {
     outline: none;
     border-radius: 100px;
     border: 2px solid transparent;
+    cursor: pointer;
 }
 
 .react-tabs ul li[aria-selected="true"] {
