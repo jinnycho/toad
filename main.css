@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -32,6 +34,8 @@ svg * {
 }
 
 .react-tabs ul li {
+    font-family: 'Source Code Pro', monospace;
+
     display: inline-block;
     padding: 20px;
     margin-right: 20px;
