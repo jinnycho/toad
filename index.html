@@ -3,37 +3,13 @@
 <head>
     <title>Drawing</title>
     <script src='./build/download-svg.js'></script>
-    <style type='text/css'>
-        svg {
-            border: 1px dashed #444;
-        }
-
-        body>* {
-            margin: 20px 0px 0px 20px;
-        }
-
-        body {
-            margin: 44px 20px;
-        }
-
-        button {
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-
-        svg * {
-            /* fill: transparent; */
-            stroke: #000;
-            stroke-width: 1px;
-        }
-
-    </style>
+    <script src='./build/index.js' defer></script>
+    <link rel="stylesheet" href="./main.css" />
 </head>
 
 <body>
-    <main id='drawing'></main>
+    <main id='root'></main>
     <button onclick='downloadSVG()'>Download SVG</button>
 </body>
-<script src='./build/drawings/drawing-01.js'></script>
 
 </html>

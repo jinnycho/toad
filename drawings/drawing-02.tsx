@@ -1,7 +1,6 @@
 import { SVG } from "../lib/svg.jsx";
-import * as React from 'react';
+import React from 'react';
 import { Leva, useControls } from 'leva';
-import { createRoot } from "react-dom/client";
 import { range } from "../lib/helpers.js";
 const { sin, cos } = Math
 
@@ -17,14 +16,14 @@ function drawingControls({ setdt }) {
     wiggle: { value: 0, min: 0, max: 30, step: 0.1 },
     opacity: { value: 0, min: 0, max: 1, step: 0.001 },
     dt: {
-      value: 1, min: 0.0001, step: 0.001, max: 6, onChange: (dt) => {
+      value: 0, min: 0, step: 0.001, max: 6, onChange: (dt) => {
         setdt(dt)
       }
     }
   })
 }
 
-function Drawing() {
+export function Drawing() {
   const [t0, setTime] = React.useState(0);
   const [dt, setdt] = React.useState(1)
 
@@ -52,6 +51,3 @@ function Drawing() {
   </>
   );
 }
-
-const root = createRoot(document.getElementById('drawing')!);
-root.render(<Drawing />)

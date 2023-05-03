@@ -1,8 +1,7 @@
 import { SVG } from "../lib/svg.jsx";
-import * as React from 'react';
-import { createRoot } from "react-dom/client";
+import React from 'react';
 
-function Drawing() {
+export function Drawing() {
   return (
     <SVG>
       <circle cx="100" cy="100" r="40" stroke="black" stroke-width="3" fill="cyan" fillOpacity={0.2} />
@@ -11,6 +10,3 @@ function Drawing() {
     </SVG>
   )
 }
-
-const root = createRoot(document.getElementById('drawing')!);
-root.render(<Drawing />)

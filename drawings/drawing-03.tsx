@@ -1,5 +1,5 @@
 import { SVG } from "../lib/svg.jsx";
-import * as React from 'react';
+import React from 'react';
 import { Leva, useControls } from 'leva';
 import { createRoot } from "react-dom/client";
 import { range } from "../lib/helpers.js";

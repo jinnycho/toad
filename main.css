@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+svg {
+    border: 1px dashed #444;
+}
+
+body>* {
+    margin: 20px 0px 0px 20px;
+}
+
+body {
+    margin: 44px 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+svg * {
+    /* fill: transparent; */
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+.react-tabs ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.react-tabs ul li {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 20px;
+    outline: none;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+
+.react-tabs ul li[aria-selected="true"] {
+    border: 2px solid #333;
+}
+
+.react-tabs ul li:not([aria-selected="true"]):hover {
+    background-color: #eee;
+}
