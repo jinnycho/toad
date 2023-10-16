@@ -17,9 +17,22 @@ body {
     margin: 44px 20px;
 }
 
-button {
+.view-source, button {
     padding: 10px 20px;
+    margin-top: 20px;
     cursor: pointer;
+    background: #eee;
+    border-radius: 3px;
+    border: 1px solid #333;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.view-source {
+  display: inline-block;
 }
 
 svg * {
@@ -52,3 +65,4 @@ svg * {
 .react-tabs ul li:not([aria-selected="true"]):hover {
     background-color: #eee;
 }
+
