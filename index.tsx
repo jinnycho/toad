@@ -5,6 +5,7 @@ import { Drawing as Drawing01 } from './drawings/drawing-01';
 import { Drawing as Drawing02 } from './drawings/drawing-02';
 import { Drawing as Drawing03 } from './drawings/drawing-03';
 import { Drawing as Drawing04 } from './drawings/drawing-04';
+import { Drawing as Drawing05 } from './drawings/drawing-05';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { downloadSVG } from './lib/download-svg';
 
@@ -19,7 +20,7 @@ function SourceLink({ function: number_str }) {
 }
 
 function App() {
-  const [tabIndex, setTabIndex] = useState(4);
+  const [tabIndex, setTabIndex] = useState(5);
 
   return (<>
     <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
@@ -29,6 +30,7 @@ function App() {
         <Tab>Drawing 02</Tab>
         <Tab>Drawing 03</Tab>
         <Tab>Drawing 04</Tab>
+        <Tab>Drawing 05</Tab>
       </TabList>
 
       <TabPanel>
@@ -50,6 +52,10 @@ function App() {
       <TabPanel>
         <Drawing04 />
         <SourceLink function="04"></SourceLink>
+      </TabPanel>
+      <TabPanel>
+        <Drawing05 />
+        <SourceLink function="05"></SourceLink>
       </TabPanel>
     </Tabs>
   </>)
