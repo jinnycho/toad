@@ -4,6 +4,19 @@
     padding: 0;
     margin: 0;
 }
+
+svg {
+    border: 1px dashed #444;
+}
+
+body>* {
+    margin: 20px 0px 0px 20px;
+}
+
+body {
+    margin: 44px 20px;
+}
+
 .view-source, button {
     padding: 10px 20px;
     margin-top: 20px;
@@ -22,16 +35,10 @@
   display: inline-block;
 }
 
-svg {
-  width: 100%;
-  height: 100%;
-}
-
 svg * {
     /* fill: transparent; */
     stroke: #000;
     stroke-width: 1px;
-
 }
 
 .react-tabs ul {
