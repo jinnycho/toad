@@ -2,6 +2,8 @@
 
 ![bait](https://github.com/jinnycho/toad/blob/main/assets/bait-smile-dragon-prince-bait.gif)
 
+[Hosted here](https://fascinating-sawine-811ba0.netlify.app/)
+
 ## Getting Started
 1. In a separate terminal, run `make`
 2. Create a file under `drawings` directory - draw anything using toad! ([example](https://github.com/jinnycho/toad/blob/b01707cf8a0de96eb59d90c9685e8bc1600290dd/drawings/drawing-00.js))
